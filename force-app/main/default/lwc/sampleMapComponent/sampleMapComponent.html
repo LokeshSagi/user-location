@@ -1,6 +1,7 @@
 <template>
-    <h1>Current Location</h1>
-    <template if:true={mapMarkers}>
-        <lightning-map map-markers={mapMarkers}></lightning-map>
-    </template>
+    <lightning-card title="Current Location" icon-name="standard:location">
+
+        <lightning-map map-markers={getLocation} class="location"></lightning-map>
+
+    </lightning-card>
 </template>
